@@ -2,31 +2,41 @@
 <html lang="de">
   <head>
     <title>Pepo - About</title>
+
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="https://collectiveone-t1.s3.us-east-2.amazonaws.com/avatar.jpeg"
+    />
     <module href="/components/head.html"></module>
   </head>
 
   <body>
+    <img
+      class="avatar"
+      src="https://collectiveone-t1.s3.us-east-2.amazonaws.com/avatar.jpeg"
+    />
+
     <h1 class="has-text-align-left" id="pepo">Pepo</h1>
     <p>
       <em
         >Welcome to my personal website. I'm an entrepreneur and software
-        developer focused on designing and building collaboration and
-        coordination tools for communities on top of web3.</em
+        developer. My current focus is on designing and building collaboration
+        and coordination tools for communities on top of web3.</em
       >
     </p>
     <p>
       <em
         >I've been close to Ethereum since 2016, when I discovered "The Dao",
         and I'm familiar with different web3 technologies and the blockchain
-        ecosystem.</em
+        ecosystem in general.</em
       >
     </p>
     <p>
       <em
-        >After a long period of hard work, experimentation and learning as an
+        >After a long period of hard work, experimentation and learning as a
         solo-entrepreneur, I'm now moving forward and actively looking to join
-        an existing and experienced team where I can continue learning while
-        making a difference.
+        an existing and experienced team to work with.
       </em>
     </p>
     <p>
@@ -42,29 +52,41 @@
       Here is a list of things I've built, starting with the most recent ones:
     </p>
 
-    <h2>The Underscore Protocol (_Prtrcl)</h2>
+    <h2>The Underscore Protocol (_Prtrcl) (2018-now)</h2>
+
     <p>
       _Prtcl started as a tool for collective content management inspired in GIT
       and became a generic protocol for building interoperable applications
       where content could be stored and forked on multiple platforms and by
       different users, including web3 DAOs.
     </p>
+
+    <p>Technologies used:</p>
+
+    <div class="tag-container">
+      <div class="tag">Typescript</div>
+      <div class="tag">Lit-Element</div>
+      <div class="tag">Local-First</div>
+      <div class="tag">Ethereum</div>
+      <div class="tag">Solidity</div>
+      <div class="tag">IPFS</div>
+      <div class="tag">OrbitDB</div>
+      <div class="tag">NodeJS</div>
+      <div class="tag">DGraph</div>
+      <div class="tag">Prosemirror</div>
+      <div class="tag">Aragon</div>
+      <div class="tag">DAOstack</div>
+    </div>
+
     <p>
       This work involved the development of different tools, some of which are
-      listed below:
+      listed below.
     </p>
 
+    <p></p>
+
     <h4>Intercreativity</h4>
-    <p>
-      A content-management application built on top of _Prtcl. Inspired in tools
-      like Notion or Roam Research but built for interoperability and supporting
-      forking and merging content from different platforms.
-    </p>
-    <p>
-      We built two versions of this application: One running purely on web2
-      technologies, and another where content was governed on Ethreum and stored
-      on IPFS.
-    </p>
+
     <p>
       <a
         href="https://www.notion.so/uprtcl/Intercreativity-689f6c877df04e04a9e100a5c5448523"
@@ -75,9 +97,22 @@
       <a href="https://github.com/uprtcl/linked-thoughts" target="_blank"
         >Github</a
       >
+
+      <a href="https://www.uprtcl.io/" target="_blank">Landing</a>
     </p>
 
-    The video below will give you an idea of what Intercreativity was.
+    <p>
+      A content-management application built on top of _Prtcl. Inspired in tools
+      like Notion or Roam Research but built for interoperability and supporting
+      forking and merging content from different platforms.
+    </p>
+    <p>
+      We built two versions of this application: One running purely on web2
+      technologies, and another where content was governed on Ethreum and stored
+      on IPFS.
+    </p>
+
+    The video below will give you an idea of what Intercreativity is.
 
     <p>
       <video
@@ -89,17 +124,6 @@
     <h4>js-uprtcl</h4>
 
     <p>
-      A Typescript library to build _Prtcl-compatible applications. It was
-      divided in different npm packages and included code for handling _Prtcl
-      objects locally and storing them on multiple _Prtcl remotes
-    </p>
-
-    <p>
-      Check this documentation site with some details about the architecture and
-      features of js-uprtcl.
-    </p>
-
-    <p>
       <a
         href="https://www.notion.so/uprtcl/Intercreativity-689f6c877df04e04a9e100a5c5448523"
         target="_blank"
@@ -109,13 +133,19 @@
       <a href="https://github.com/uprtcl/js-uprtcl" target="_blank">Github</a>
     </p>
 
-    <h4>js-uprtcl-server</h4>
-
-    <p>A NodeJS + DGraph backend to store and query linked _Prtcl objects.</p>
     <p>
-      It stores linked and nested _Prtcl objects and exposes endpoints to
-      efficiently query them.
+      A Typescript library to build _Prtcl-compatible applications. It is
+      divided in different npm packages and included code for handling _Prtcl
+      objects locally and asynchronously storing/reading them on multiple _Prtcl
+      remotes.
     </p>
+
+    <p>
+      Check the documentation site above with all the details about the
+      architecture and features.
+    </p>
+
+    <h4>js-uprtcl-server</h4>
 
     <p>
       <a href="https://github.com/uprtcl/js-uprtcl-server" target="_blank"
@@ -123,7 +153,20 @@
       >
     </p>
 
+    <p>A NodeJS + DGraph backend to store and query linked _Prtcl objects.</p>
+    <p>
+      It stores linked and nested _Prtcl objects and exposes endpoints to
+      efficiently query them.
+    </p>
+
     <h4>eth-uprtcl</h4>
+
+    <p>
+      <a href="https://github.com/uprtcl/js-uprtcl-server" target="_blank"
+        >Github</a
+      >
+    </p>
+
     <p>
       An Ethereum-based _Prtcl-remote to govern digital content on top of
       Ethereum and IPFS.
@@ -132,19 +175,7 @@
       It also includes a prototype for a naming system based on harberger taxes.
     </p>
 
-    <p>
-      <a href="https://github.com/uprtcl/js-uprtcl-server" target="_blank"
-        >Github</a
-      >
-    </p>
-
     <h4>reasonable</h4>
-
-    <p>
-      An Ethereum-based infrastructure to support the organizations behind
-      _Prtcl development. It includes an onchain enforced exit-to community
-      scheme.
-    </p>
 
     <p>
       <a
@@ -156,7 +187,23 @@
       <a href="https://github.com/uprtcl/reasonable" target="_blank">Github</a>
     </p>
 
-    <h2><strong>CollectiveOne</strong></h2>
+    <p>
+      An Ethereum-based infrastructure to support the organizations behind
+      _Prtcl development. It includes an onchain enforced exit-to community
+      scheme.
+    </p>
+
+    <h2>CollectiveOne (2017-2018)</h2>
+
+    <p>
+      <a href="https://www.collectiveone.org/" target="_blank">Live</a>
+      -
+      <a
+        href="https://github.com/CollectiveOne/CollectiveOneWebapp"
+        target="_blank"
+        >Github</a
+      >
+    </p>
 
     <p>
       A tool for open and distributed collaboration. It was a web2 application
@@ -165,44 +212,108 @@
       curating common content.
     </p>
 
-    The video below will give you an idea of what CollectiveOne was.
+    <p>Technologies used:</p>
+
+    <div class="tag-container">
+      <div class="tag">Vue JS</div>
+      <div class="tag">Java</div>
+      <div class="tag">Postgres</div>
+    </div>
+
+    <p>The video below will give you an idea of what CollectiveOne is.</p>
+
+    <video
+      controls
+      src="https://collectiveone-t1.s3.us-east-2.amazonaws.com/c1-pepo-site.webm"
+    ></video>
+
+    <br />
+    <br />
+
+    <h2>Aerospace Engineer (2010-2016)</h2>
 
     <p>
-      <video
-        controls
-        src="https://collectiveone-t1.s3.us-east-2.amazonaws.com/c1-pepo-site.webm"
-      ></video>
+      Prior to being an entrepreneur, I worked as an Aerospace Engineer for
+      three different projects funded by the European Space Agency.
     </p>
 
-    <p>Aerospace Engineer</p>
     <p>
-      Prior to being an entrepreneur, I worked as an Aerospace engineer. I
-      designed and built automatic control software for atmospheric reentry
-      vehicles and interplanetary probes.
+      I worked as a researcher, a project engineer and project manager and used
+      to keep my
+      <a href="https://www.linkedin.com/in/pepo/">LinkedId</a> updated at that
+      time. You can find more details there.
     </p>
-    <p>gn3c (Matlab) - Self-promoted internal tool.</p>
+
+    <p>These are the tools/prototypes I personally built during this time:</p>
+
+    <h4>Conpat</h4>
+
     <p>
-      A built an internal tool for signal processing and visualization on top of
-      Matlab called gn3c.
+      I built an internal object-oriented tool for signal processing and
+      visualization on Matlab. The tool is still one of the core tools used by
+      the GNC team at the company
+      <a href="https://elecnor-deimos.com/" target="_blank">(Deimos-Space)</a>.
     </p>
+
+    <h4>Atmospheric Guided Entry</h4>
+
     <p>
-      Interplanetary probe attitude and trajectory correction control system
+      I designed a model-based 6DOF attitude and trajectory control for an
+      interplanetary entry capsule reaching Mars atmosphere.
     </p>
-    <p>Atmospheric Guided Reentry attidude control</p>
-    <p>Atmospheric Guided Entry attitude and trajectory control</p>
-    <p>Github</p>
-    <p>Control System's PhD</p>
+
     <p>
-      Spent 5 years next to
+      <a
+        href="https://drive.google.com/file/d/11OOR4UgcCb3FHN16ucthjAwS2az7ngLe/view?usp=sharings"
+        target="_blank"
+        >Attitude GNC</a
+      >
+      -
+      <a
+        href="https://drive.google.com/file/d/1Bu_hACyE-7uGMl_NlKZq-YQJLbfpJ57I/view?usp=sharing"
+        target="_blank"
+        >Trajectory GNC</a
+      >
+    </p>
+
+    <h2>Control System's PhD (2007-2009)</h2>
+
+    <p>
+      <a
+        href="https://www.researchgate.net/scientific-contributions/Jose-Ospina-13810078"
+        target="_blank"
+        >Publications</a
+      >
+    </p>
+
+    <p>
+      I spent 5 years next to
       <a href="https://www.gekant.it/">Prof. Enrico Canuto</a>, and dive deep
       into the essence of modelling real-life systems for the purpose of
       controlling them. Learned how either practice-only, or theory-only
-      approaches are comfortable, and the real challenge lies in combining the
-      two.
+      approaches are comfortable and relatively simple, while the real challenge
+      lies in combining the two.
     </p>
+
     <p>
-      Tactile Images Device - Built as the final project for my Electronic
-      Engineering undergraduate studies.
+      During this time I built a relatively simple temperature control system.
+      But learn't a lot during the process.
+    </p>
+
+    <h2>Electronic Engineering Undergrad (2000-2005)</h2>
+
+    <p>
+      <a
+        href="https://www.researchgate.net/scientific-contributions/Jose-Ospina-13810078"
+        target="_blank"
+        >Thesis</a
+      >
+    </p>
+
+    <p>
+      As my final project, I ideated, designed and built a tactile image
+      transducer that converted visual images into tactile ones using an
+      electrode matrix. .
     </p>
 
     <script src="bundle.js" defer async></script>

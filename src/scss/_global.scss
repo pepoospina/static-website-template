@@ -20,6 +20,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   padding: 2rem;
   max-width: 800px;
+  margin: 0 auto;
 }
 
 video {
@@ -35,11 +36,19 @@ a {
 }
 
 p {
-  margin: 2rem 0;
+  margin: 1.4rem 0;
   line-height: 1.4em;
 }
 
 hr {
   background-color: "#959595";
   color: "#959595";
+}
+
+h1,
+h2,
+h3,
+h4,
+h4 {
+  color: rgb(56, 48, 133);
 }
