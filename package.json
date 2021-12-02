@@ -16,7 +16,7 @@
     "build:css": "npm run css:lint && npm run css:scss && npm run css:autoprefixer",
     "build:js": "webpack --mode=production",
     "build:html": "posthtml -c posthtml.json",
-    "build:images": "imagemin src/images/**/* --out-dir=dist/images",
+    "build:images": "imagemin src/images/**/* --out-dir=dist/",
     "build": "run-s build:*",
     "serve": "browser-sync start --server \"dist\" --files \"dist\"",
     "watch:css": "onchange \"src/scss\" -- npm run build:css",
